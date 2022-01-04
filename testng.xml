@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="resources.Listeners"/>
+<listener class-name="resources.ExtentReporterNG"/>
+
+
+</listeners>
+  
+   <test thread-count="5" name="Skip">
+    <classes>
+      <class name="mobile.skip"/>
+    </classes>
+  </test> 
+  <test thread-count="5" name="Beforelogin">
+    <classes>
+      <class name="mobile.Beforelogin"/>
+    </classes>
+  </test> 
+  <test thread-count="5" name="Login">
+    <classes>
+      <class name="mobile.Login"/>
+    </classes>
+  </test> 
+  <test thread-count="5" name="Appointements">
+    <classes>
+      <class name="mobile.Appointement"/>
+    </classes>
+  </test>  
+  <test thread-count="5" name="Vitals">
+    <classes>
+      <class name="mobile.Vitals"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="HealthRecords">
+    <classes>
+      <class name="mobile.HealthRecords"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->
